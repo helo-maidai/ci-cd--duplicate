@@ -30,3 +30,6 @@ jobs:
 
       - name: Run Tests
         run: pytest tests/ -v
+
+      - name: Run src
+        run: pytest src/ -v
