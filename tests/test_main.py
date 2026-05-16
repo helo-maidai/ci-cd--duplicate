@@ -12,6 +12,3 @@ def test_no_duplicates():
   df = load_and_process_data("data/dataset.csv", "data/test_processed_dataset.csv")
 
   assert not df.duplicated().sum() == 0, "Duplicated rows were not fully removed"
-
-# Run test locally
-!pytest tests/ -v
